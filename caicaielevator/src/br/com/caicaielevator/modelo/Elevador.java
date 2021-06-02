@@ -1,4 +1,4 @@
-package br.com.caicaielevator.implementacao;
+package br.com.caicaielevator.modelo;
 
 public class Elevador {
 

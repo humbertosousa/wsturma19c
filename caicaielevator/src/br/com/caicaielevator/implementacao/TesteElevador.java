@@ -1,8 +1,6 @@
-package br.com.caicaielevator.modelo;
+package br.com.caicaielevator.implementacao;
 
-import javax.swing.JOptionPane;
-
-import br.com.caicaielevator.implementacao.Elevador;
+import br.com.caicaielevator.modelo.Elevador;
 
 public class TesteElevador {
 
