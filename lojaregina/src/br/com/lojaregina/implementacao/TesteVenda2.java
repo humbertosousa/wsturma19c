@@ -1,5 +1,7 @@
 package br.com.lojaregina.implementacao;
 
+import javax.swing.JOptionPane;
+
 import br.com.lojaregina.modelo.Cliente;
 import br.com.lojaregina.modelo.Colaborador;
 import br.com.lojaregina.modelo.Endereco;
@@ -9,12 +11,24 @@ import br.com.lojaregina.modelo.Venda;
 
 public class TesteVenda2 {
 
+	public static int i(String msg) {
+		return Integer.parseInt(s(msg));
+	}
+	
+	public static String s(String msg) {
+		return JOptionPane.showInputDialog(msg).toUpperCase();
+	}
+	
+	public static double d(String msg) {
+		return Double.parseDouble(s(msg));
+	}
+	
 	public static void main(String[] args) {
 		
 		
 		Venda venda = new Venda(
-				1,
-				"02/06/2021",
+				i("codigo"),
+				s("data"),
 				new Produto(
 						100,
 						"Churros",
